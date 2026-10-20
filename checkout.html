@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | Paw Perfect</title>
+<meta name="description" content="Secure checkout for the Paw Perfect shop.">
+<link rel="canonical" href="https://www.pawperfectdoggrooming.com/checkout/">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paw Perfect">
+<meta property="og:title" content="Checkout | Paw Perfect">
+<meta property="og:description" content="Secure checkout for the Paw Perfect shop.">
+<meta property="og:url" content="https://www.pawperfectdoggrooming.com/checkout/">
+<meta property="og:image" content="https://www.pawperfectdoggrooming.com/images/logo.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="images/logo.png">
+<script>if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('reveal-ready');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&amp;family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://www.paypal.com">
+</head>
+<body class="page-checkout">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<symbol id="paw" viewBox="0 0 64 64"><path d="M32 35c-7.5 0-15 6.5-15 13 0 4.4 3.3 6.4 7.5 6.4 3 0 5.2-1.2 7.5-1.2s4.5 1.2 7.5 1.2c4.2 0 7.5-2 7.5-6.4 0-6.5-7.5-13-15-13z"/><ellipse cx="13.5" cy="29" rx="5.2" ry="7.2" transform="rotate(-22 13.5 29)"/><ellipse cx="25" cy="17.5" rx="5.6" ry="8.2" transform="rotate(-8 25 17.5)"/><ellipse cx="39" cy="17.5" rx="5.6" ry="8.2" transform="rotate(8 39 17.5)"/><ellipse cx="50.5" cy="29" rx="5.2" ry="7.2" transform="rotate(22 50.5 29)"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+<symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.7" fill="currentColor"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.5c.2 2.8 3.2 5.8 6 6l1.2-1.2-2-1.2-.9.8c-.9-.4-1.9-1.4-2.3-2.3l.8-.9-1.2-2L9 8.5z"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2A2 2 0 0 1 15.8 21H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+<symbol id="i-van" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+<symbol id="i-jacket" viewBox="0 0 48 48"><path d="M17 8l-9 6 3 9 4-2v19h18V21l4 2 3-9-9-6c-1 3.5-3.8 5.5-7 5.5S18 11.5 17 8z"/><path d="M24 13.5V40"/><circle cx="27.5" cy="22" r=".9"/><circle cx="27.5" cy="29" r=".9"/></symbol>
+<symbol id="i-collar" viewBox="0 0 48 48"><ellipse cx="24" cy="22" rx="15" ry="9"/><ellipse cx="24" cy="22" rx="11" ry="5.5"/><rect x="20" y="28" width="8" height="5" rx="1"/><path d="M24 33v3"/><circle cx="24" cy="39" r="3"/><path d="M16 12l-4-4 5-1zM32 12l4-4-5-1z"/></symbol>
+<symbol id="i-brush" viewBox="0 0 48 48"><rect x="10" y="8" width="28" height="20" rx="10"/><path d="M16 14v8M21 13v10M26 13v10M31 14v8"/><path d="M20 28l-2 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l-2-12"/></symbol>
+<symbol id="i-bottle" viewBox="0 0 48 48"><rect x="20" y="5" width="8" height="6" rx="1.5"/><path d="M19 11h10l2 5H17z"/><rect x="13" y="16" width="22" height="26" rx="5"/><path d="M18 26h12M18 31h8"/></symbol>
+<symbol id="i-bandana" viewBox="0 0 48 48"><path d="M8 12h32L24 40z"/><path d="M8 12h32v4H8z"/><circle cx="20" cy="20" r="1.4"/><circle cx="28" cy="20" r="1.4"/><circle cx="24" cy="27" r="1.4"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.4.9-4.6 4.5 1.1 6.3L12 17.3l-5.7 3 1.1-6.3-4.6-4.5 6.4-.9z"/></symbol>
+</svg>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="header-left">
+      <a class="icon-btn call-btn" href="tel:+447403218926" aria-label="Call 07403 218926"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+      <ul class="desk-nav"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li></ul>
+    </div>
+    <a class="logo" href="index.html" aria-label="Paw Perfect, home"><img src="images/logo-t.webp" width="626" height="446" alt="Paw Perfect"></a>
+    <div class="header-right">
+      <ul class="desk-nav"><li><a href="shop.html">Shop</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <button class="icon-btn cart-btn" type="button" aria-label="Basket" aria-controls="cart" hidden><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg><span class="cart-count" hidden>0</span></button>
+      <a class="btn btn--primary desk-only" href="contact.html#book">Book now</a>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Main">
+    <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="shop.html">Shop</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn--primary" href="contact.html#book">Book an appointment</a></li></ul>
+  </nav>
+</header>
+<main id="main">
+<section class="page-hero">
+  <svg class="veins" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><g>
+<path class="v1" pathLength="1" d="M-60 230 C190 110 380 380 650 250 S1030 40 1500 200"/>
+<path class="v2" pathLength="1" d="M-60 540 C170 420 430 660 720 560 S1090 370 1500 520"/>
+<path class="v3" pathLength="1" d="M330 -40 C400 130 250 270 430 420 S570 690 510 860"/>
+<path class="v4" pathLength="1" d="M960 -40 C880 170 1040 300 960 490 S1110 700 1050 860"/>
+<path class="v5" pathLength="1" d="M-60 380 C120 330 250 450 420 400"/>
+<path class="v5" pathLength="1" d="M1100 300 C1200 240 1300 330 1500 280"/>
+</g></svg>
+  <div class="container page-hero__inner">
+    <p class="crumbs"><a href="shop.html">Shop</a> / Checkout</p>
+    <h1>Checkout</h1>
+    <p class="testmode"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Test mode: no real payments are taken.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(2rem,5vw,3rem)">
+  <div class="container">
+    <div class="checkout" id="checkout">
+      <div class="checkout__main">
+        <form class="panel" id="delivery" novalidate>
+          <h2>Delivery details</h2>
+          <div class="form-grid">
+            <div class="form-grid form-grid--two">
+              <div class="field-group">
+                <label for="d-name">Full name</label>
+                <input id="d-name" name="name" type="text" autocomplete="name" required aria-describedby="d-name-e">
+                <p class="field__error" id="d-name-e">Enter your full name.</p>
+              </div>
+              <div class="field-group">
+                <label for="d-email">Email</label>
+                <input id="d-email" name="email" type="email" autocomplete="email" required aria-describedby="d-email-e">
+                <p class="field__error" id="d-email-e">Enter an email address, like name@example.com.</p>
+              </div>
+            </div>
+            <div class="field-group">
+                <label for="d-addr1">Address line 1</label>
+                <input id="d-addr1" name="addr1" type="text" autocomplete="address-line1" required aria-describedby="d-addr1-e">
+                <p class="field__error" id="d-addr1-e">Enter the first line of your address.</p>
+              </div>
+            <div class="field-group">
+                <label for="d-addr2">Address line 2 <span class="opt">(optional)</span></label>
+                <input id="d-addr2" name="addr2" type="text" autocomplete="address-line2">
+                
+              </div>
+            <div class="form-grid form-grid--two">
+              <div class="field-group">
+                <label for="d-town">Town or city</label>
+                <input id="d-town" name="town" type="text" autocomplete="address-level2" required aria-describedby="d-town-e">
+                <p class="field__error" id="d-town-e">Enter your town or city.</p>
+              </div>
+              <div class="field-group">
+                <label for="d-post">Postcode</label>
+                <input id="d-post" name="postcode" type="text" autocomplete="postal-code" required aria-describedby="d-post-e">
+                <p class="field__error" id="d-post-e">Enter a UK postcode, like SW1A 1AA.</p>
+              </div>
+            </div>
+            <div class="field-group">
+                <label for="d-phone">Phone <span class="opt">(optional)</span></label>
+                <input id="d-phone" name="phone" type="tel" autocomplete="tel">
+                
+              </div>
+          </div>
+        </form>
+        <div class="panel pay">
+          <h2>Payment</h2>
+          <p class="pay__note">Pay with PayPal, Pay Later, or a debit or credit card. No PayPal account needed for card payments.</p>
+          <p class="form-status" id="pay-status" role="status" aria-live="polite"></p>
+          <div id="paypal-buttons" class="pay__buttons"><p class="pay__loading">Loading secure payment options&hellip;</p></div>
+          <p class="pay__alt">Prefer to arrange payment directly? <button type="button" class="link-btn order-btn">Send your order on WhatsApp</button></p>
+        </div>
+      </div>
+      <aside class="panel summary" aria-labelledby="summary-title">
+        <h2 id="summary-title">Your order</h2>
+        <div class="summary__items"></div>
+        <dl class="summary__totals">
+          <div><dt>Subtotal</dt><dd class="js-subtotal"></dd></div>
+          <div><dt>UK postage</dt><dd>Free</dd></div>
+          <div class="summary__grand"><dt>Total</dt><dd class="js-total"></dd></div>
+        </dl>
+        <a class="link-arrow" href="shop.html">Continue shopping</a>
+      </aside>
+    </div>
+    <div class="done" id="done" hidden tabindex="-1">
+      <span class="done__tick" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg></span>
+      <h2>Thank you, your order is confirmed</h2>
+      <p class="js-done-text"></p>
+      <a class="btn btn--primary" href="shop.html">Back to the shop</a>
+    </div>
+    <div class="empty" id="checkout-empty" hidden>
+      <h2>Your basket is empty</h2>
+      <p>Add something from the shop to check out.</p>
+      <a class="btn btn--primary" href="shop.html">Browse the shop</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-logo" href="index.html" aria-label="Paw Perfect, home"><img src="images/logo.webp" width="626" height="446" alt="" loading="lazy"></a>
+        <p>Paw Perfect, established in 2018 by Star, is a London-wide independent pet grooming and services business.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <ul>
+          <li><a href="tel:+447403218926">07403 218926</a></li>
+          <li><a href="https://wa.me/447403218926?text=Hi%20Paw%20Perfect%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/pawperfectdoggrooming/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Paw Perfect. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" aria-hidden="true"></div>
+<aside class="drawer" id="cart" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+  <div class="drawer__head">
+    <h2 id="cart-title">Your basket</h2>
+    <button class="icon-btn drawer__close" type="button" aria-label="Close basket"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="drawer__body"></div>
+  <div class="drawer__foot" hidden>
+    <div class="total"><span>Subtotal</span><span></span></div>
+    <p>Free UK postage.</p>
+    <a class="btn btn--primary btn--block" href="checkout.html">Checkout <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    <button class="btn btn--outline btn--block order-btn" type="button"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg> <span>Or order on WhatsApp</span></button>
+  </div>
+</aside>
+<a class="wa" href="https://wa.me/447403218926?text=Hi%20Paw%20Perfect%2C%20I%E2%80%99d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat with Paw Perfect on WhatsApp">
+  <span class="wa__label" aria-hidden="true">Chat on WhatsApp</span>
+  <svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+<script src="script.js" defer></script>
+</body>
+</html>
